@@ -1,27 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+html,body{
+    font-size: 10px;
+    scroll-behavior: smooth;
+    transition: all 0.5s linear;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@media (width < 1420px) {
+    html,body{
+        font-size: 9.5px;
+    }
+}
+@media (width < 1320px) {
+    html,body{
+        font-size: 9px;
+    }
+}
+@media (width < 1220px) {
+    html,body{
+        font-size: 8.5px;
+    }
+}
+@media (width < 1120px) {
+    html,body{
+        font-size: 8px;
+    }
+}
+@media (width < 1020px) {
+    html,body{
+        font-size: 7.5px;
+    }
+}
+@media (width < 920px) {
+    html,body{
+        font-size: 7px;
+    }
+}
+@media (width < 820px) {
+    html,body{
+        font-size: 6.5px;
+    }
+}
+@media (width < 720px) {
+    html,body{
+        font-size: 6px;
+    }
+}
+@media (width < 620px) {
+    html,body{
+        font-size: 5.5px;
+    }
+}
+@media (width < 520px) {
+    html,body{
+        font-size: 5px;
+    }
+}
+@media (width < 420px) {
+    html,body{
+        font-size: 4.5px;
+    }
+}
+@media (width < 320px) {
+    html,body{
+        font-size: 4px;
+    }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+
+/* ================================= */
+            /* HEADER */
+/* ================================= */
+
+.desktop-header{
+font-size: 10px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+
+@media (width < 1420px) {
+    .desktop-header{
+        font-size: 9.5px;
+    }
+}
+@media (width < 1320px) {
+    .desktop-header{
+        font-size: 9px;
+    }
+}
+@media (width < 1220px) {
+    .desktop-header{
+        font-size: 8.5px;
+    }
+}
+@media (width < 1120px) {
+    .desktop-header{
+        font-size: 8px;
+    }
+}
+@media (width < 1020px) {
+    .desktop-header{
+        font-size: 7.5px;
+    }
+}
+@media (width < 920px) {
+    .desktop-header{
+        font-size: 7px;
+    }
+}
+@media (width < 820px) {
+    .desktop-header{
+        font-size: 6.5px;
+    }
+}
+@media (width < 720px) {
+    .desktop-header{
+        font-size: 6px;
+    }
+}
+@media (width < 620px) {
+    .desktop-header{
+        font-size: 5.5px;
+        display: none;
+    }
+    .mobile-header{
+        display: flex;
+    }
+}
+@media (width < 520px) {
+    .mobile-header{
+        font-size: 6.5px;
+        display: flex;
+    }
+}
+@media (width < 420px) {
+    .mobile-header{
+        font-size: 6px;
+    }
+}
+@media (width < 320px) {
+    .mobile-header{
+        font-size: 4px;
+    }
+}
+
+
+
+/* ================================= */
+            /* Landing Page*/
+/* ================================= */
+
+.landing-page{
+    font-size: 10px;
+    }
+    
+    @media (width < 1420px) {
+        .landing-page{
+            font-size: 9.5px;
+        }
+    }
+    @media (width < 1320px) {
+        .landing-page{
+            font-size: 9px;
+        }
+    }
+    @media (width < 1220px) {
+        .landing-page{
+            font-size: 8.5px;
+        }
+    }
+    @media (width < 1120px) {
+        .landing-page{
+            font-size: 8px;
+        }
+    }
+    @media (width < 1020px) {
+        .landing-page{
+            font-size: 7px;
+        }
+    }
+    @media (width < 920px) {
+        .landing-page{
+            font-size: 6.5px;
+        }
+    }
+    @media (width < 820px) {
+        .landing-page{
+            font-size: 5.5px;
+        }
+    }
+    @media (width < 720px) {
+        .landing-page{
+            font-size: 4.5px;
+        }
+    }
+    @media (width < 620px) {
+        .landing-page{
+            font-size: 5.5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15em;
+            padding: 0em 2em;
+            width: 100%;
+            & h3,h2,p{
+                text-align: center;
+            }
+            & .left-side{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    }
+    @media (width < 520px) {
+        .landing-page{
+            font-size: 5.5px;
+        }
+    }
+    @media (width < 420px) {
+        .landing-page{
+            font-size: 4.5px;
+        }
+    }
+    @media (width < 320px) {
+        .landing-page{
+            font-size: 4px;
+        }
+    }
+    
+
+/* ================================= */
+        /* About page*/
+/* ================================= */
+
+
+.about-page{
+    font-size: 10px;
+}
+
+@media (width < 1420px) {
+    .about-page{
+        font-size: 9.5px;
+    }
+}
+@media (width < 1320px) {
+    .about-page{
+        font-size: 9px;
+    }
+}
+@media (width < 1220px) {
+    .about-page{
+        font-size: 8.5px;
+    }
+}
+@media (width < 1120px) {
+    .about-page{
+        font-size: 8px;
+    }
+}
+@media (width < 1020px) {
+    .about-page{
+        font-size: 7.5px;
+    }
+}
+@media (width < 920px) {
+    .about-page{
+        font-size: 7px;
+    }
+}
+@media (width < 820px) {
+    .about-page{
+        font-size: 6.5px;
+    }
+}
+@media (width < 720px) {
+    .about-page{
+        font-size: 6px;
+    }
+}
+@media (width < 620px) {
+    .about-page{
+        font-size: 5.5px;
+        & .left_side{
+            display: none;
+        }
+        & .right_side{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            & h2,p{
+                text-align: center;
+            }
+        }
+    }
+}
+@media (width < 520px) {
+    .about-page{
+        font-size: 5px;
+    }
+}
+@media (width < 420px) {
+    .about-page{
+        font-size: 4.5px;
+    }
+}
+@media (width < 320px) {
+    .about-page{
+        font-size: 4px;
+    }
+}
+
+
+/* ================================= */
+        /* Skill Page*/
+/* ================================= */
+
+
+.skill-page{
+    font-size: 10px;
+}
+
+@media (width < 1420px) {
+    .skill-page{
+        font-size: 9.5px;
+    }
+}
+@media (width < 1320px) {
+    .skill-page{
+        font-size: 9px;
+    }
+}
+@media (width < 1220px) {
+    .skill-page{
+        font-size: 8.5px;
+    }
+}
+@media (width < 1120px) {
+    .skill-page{
+        font-size: 8px;
+    }
+}
+@media (width < 1020px) {
+    .skill-page{
+        font-size: 7.5px;
+    }
+}
+@media (width < 920px) {
+    .skill-page{
+        font-size: 7px;
+    }
+}
+@media (width < 820px) {
+    .skill-page{
+        font-size: 6.5px;
+    }
+}
+@media (width < 720px) {
+    .skill-page{
+        font-size: 6px;
+    }
+}
+@media (width < 620px) {
+    .skill-page{
+        font-size: 5.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3em;
+        & h2,p{
+            text-align: center;
+            width: 100%;
+        }
+        & .left-side{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+            & div{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+@media (width < 520px) {
+    .skill-page{
+        font-size: 5px;
+    }
+}
+@media (width < 420px) {
+    .skill-page{
+        font-size: 4.5px;
+    }
+}
+@media (width < 320px) {
+    .skill-page{
+        font-size: 4px;
+    }
+}
+
+
+
+/* ================================= */
+        /* Project Page*/
+/* ================================= */
+
+
+.project-page{
+    font-size: 10px;
+}
+
+@media (width < 1420px) {
+    .project-page{
+        font-size: 9.5px;
+    }
+}
+@media (width < 1320px) {
+    .project-page{
+        font-size: 9px;
+    }
+}
+@media (width < 1220px) {
+    .project-page{
+        font-size: 8.5px;
+    }
+}
+@media (width < 1120px) {
+    .project-page{
+        font-size: 8px;
+    }
+}
+@media (width < 1020px) {
+    .project-page{
+        font-size: 7.5px;
+    }
+}
+@media (width < 920px) {
+    .project-page{
+        font-size: 7px;
+    }
+}
+@media (width < 820px) {
+    .project-page{
+        font-size: 6.5px;
+    }
+}
+@media (width < 720px) {
+    .project-page{
+        font-size: 6px;
+    }
+}
+@media (width < 650px) {
+    .project-page{
+        font-size: 5.5px;
+        padding: 0em 5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .project-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 5em;
+            & .right-side{
+                width: 100%;
+                & h2,p,div{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (width < 520px) {
+    .project-page{
+        font-size: 5px;
+    }
+}
+@media (width < 420px) {
+    .project-page{
+        font-size: 4.5px;
+    }
+}
+@media (width < 320px) {
+    .project-page{
+        font-size: 4px;
+    }
+}
+
+:hover.left-side{
+    transition: all 0.3s linear;
+}
+
+:hover.project-image{
+    & .explore-btn{
+        display: flex;
+    }
+}
+
+
+/* ================================= */
+        /* Contact Page*/
+/* ================================= */
+
+
+.contact-page{
+    font-size: 10px;
+}
+
+@media (width < 1420px) {
+    .contact-page{
+        font-size: 9.5px;
+    }
+}
+@media (width < 1320px) {
+    .contact-page{
+        font-size: 9px;
+    }
+}
+@media (width < 1220px) {
+    .contact-page{
+        font-size: 8.5px;
+    }
+}
+@media (width < 1120px) {
+    .contact-page{
+        font-size: 8px;
+    }
+}
+@media (width < 1020px) {
+    .contact-page{
+        font-size: 7.5px;
+    }
+}
+@media (width < 920px) {
+    .contact-page{
+        font-size: 7px;
+    }
+}
+@media (width < 820px) {
+    .contact-page{
+        font-size: 6.5px;
+    }
+}
+@media (width < 720px) {
+    .contact-page{
+        font-size: 6px;
+    }
+}
+@media (width < 620px) {
+    .contact-page{
+        font-size: 5.5px;
+        padding: 0em 5em;
+        & .left-side{
+            display: none;
+        }
+        & .right-side{
+            width: 100%;
+        }
+    }
+}
+@media (width < 520px) {
+    .contact-page{
+        font-size: 5px;
+    }
+}
+@media (width < 420px) {
+    .contact-page{
+        font-size: 4.5px;
+    }
+}
+@media (width < 320px) {
+    .contact-page{
+        font-size: 4px;
+    }
+}
+
+
+
+/* ================================= */
+        /* Footer*/
+/* ================================= */
+
+
+.footer{
+    font-size: 10px;
+}
+
+@media (width < 1420px) {
+    .footer{
+        font-size: 9.5px;
+    }
+}
+@media (width < 1320px) {
+    .footer{
+        font-size: 9px;
+    }
+}
+@media (width < 1220px) {
+    .footer{
+        font-size: 8.5px;
+    }
+}
+@media (width < 1120px) {
+    .footer{
+        font-size: 8px;
+    }
+}
+@media (width < 1020px) {
+    .footer{
+        font-size: 7.5px;
+    }
+}
+@media (width < 920px) {
+    .footer{
+        font-size: 7px;
+    }
+}
+@media (width < 820px) {
+    .footer{
+        font-size: 6.5px;
+    }
+}
+@media (width < 720px) {
+    .footer{
+        font-size: 6px;
+    }
+}
+@media (width < 620px) {
+    .footer{
+        font-size: 5.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4em;
+    }
+}
+@media (width < 520px) {
+    .footer{
+        font-size: 5px;
+    }
+}
+@media (width < 420px) {
+    .footer{
+        font-size: 4.5px;
+    }
+}
+@media (width < 320px) {
+    .footer{
+        font-size: 4px;
+    }
 }
