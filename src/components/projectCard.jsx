@@ -8,8 +8,8 @@ const ProjectCard = ({name,category,description,image,technologies,live_link,rep
     return (
         <div className='project-card flex justify-center py-[2em] items-center gap-[5em]'>
             <div className='left-side project-image p-[0.5em] hover:scale-110 flex justify-center items-center relative '>
-                <Image src={lapotop_image} className="w-[35em] drop-shadow-2xl "  alt='Laptop-image' />
-                <Image src={image} width={1000} height={1000} className='absolute z-10 w-[25em] h-[15.7em] bottom-[3.9em]' alt='project-image' />
+                <Image src={lapotop_image} className="laptop-img w-[35em] drop-shadow-2xl "  alt='Laptop-image' />
+                <Image src={image} width={1000} height={1000} className='project-img absolute z-10 w-[25em] h-[15.7em] bottom-[3.9em]' alt='project-image' />
                 <Link href={live_link} className='top-[-1.8em] absolute' target='_blank'><button className='explore-btn text-[1.5em] hidden justify-center gap-[0.2em] items-center font-poppines font-medium capitalize py-[0.2em] rounded-[0.2em] px-[1em] text-[#0DB760] bg-[#0db75f42]'>
                     Explore
                     <GoArrowUpRight className='text-[1.2em]'/>
